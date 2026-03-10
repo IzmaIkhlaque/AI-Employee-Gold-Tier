@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.log
+.obsidian/workspace.json
+node_modules/
+memory/
+.claude/settings.local.json
+config/chromium_profile
