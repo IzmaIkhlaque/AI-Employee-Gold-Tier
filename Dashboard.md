@@ -1,6 +1,6 @@
 # AI Employee Dashboard
 
-**Last Updated:** 2026-02-28 12:00:00
+**Last Updated:** 2026-03-12 10:10:00
 **Tier:** 🥇 Gold
 
 ---
@@ -13,8 +13,8 @@
 | Needs_Action | 0 |
 | Plans | 0 |
 | Drafts | 0 |
-| Pending_Approval | 0 |
-| Approved | 0 |
+| Pending_Approval | 1 |
+| Approved | 1 |
 | Done | 0 |
 
 ---
@@ -33,6 +33,12 @@
 
 | Timestamp | Action | Status |
 |-----------|--------|--------|
+| 2026-03-12 10:10:00 | CEO Briefing generated — [CEO_Briefing_2026-03-12.md](/Briefings/CEO_Briefing_2026-03-12.md) | ✅ Done |
+| 2026-03-12 10:05:00 | Odoo sync — Current_Month.md updated (March 2026, 30 accounts) | ✅ Done |
+| 2026-03-12 10:02:00 | Approval simulated — PENDING_odoo_invoice_test moved to /Approved | ✅ Done |
+| 2026-03-12 10:00:00 | HITL request created — Odoo test invoice (PENDING_odoo_invoice_test) | ✅ Done |
+| 2026-03-12 09:58:00 | Odoo MCP verified — connected, Odoo 19.0, db: ai_employee_db | ✅ Done |
+| 2026-03-12 09:58:00 | Odoo MCP bug fixed — removed deprecated field filter (Odoo 19 compat) | ✅ Done |
 | 2026-02-28 09:10:00 | LinkedIn post draft created — AI Employee productivity angle | ⏳ Pending Approval |
 | 2026-02-28 09:05:00 | Email sent — Ahmed Raza, Next Solutions Pvt Ltd (ID: 19ca0d0178d8e550) | ✅ Done |
 | 2026-02-28 09:05:00 | Files archived to /Done — Ahmed Raza inquiry (4 files) | ✅ Done |
@@ -83,15 +89,19 @@
 
 ## 🥇 Gold Tier — Accounting Summary
 
-> Source: `/Accounting/Current_Month.md` — Last synced: **never**
+> Source: `/Accounting/Current_Month.md` — Last synced: **2026-03-12 10:05 PKT**
 
-| Metric | Amount |
-|--------|--------|
-| Total Revenue | $0.00 |
-| Total Expenses | $0.00 |
-| Net Profit | $0.00 |
-| Pending Invoices | 0 |
-| Overdue Payments | 0 |
+| Metric | Amount (PKR) |
+|--------|-------------|
+| Total Revenue (invoiced) | 0.00 |
+| Total Payments Received | 0.00 |
+| Overdue Receivables | 0.00 |
+| Open Invoices | 0 |
+| Overdue Invoices | 0 |
+| Q1 Target | ~2,520,000 (~$18,000 USD) |
+| Q1 Progress | 0% |
+
+> Fresh Odoo instance — chart of accounts loaded (30 accounts, Pakistani COA template).
 
 ---
 
@@ -121,18 +131,18 @@
 
 | Item | Value |
 |------|-------|
-| Next CEO Briefing | Monday, 2026-03-02 at 7:00 AM |
-| Last Briefing | — (not yet generated) |
+| Next CEO Briefing | Monday, 2026-03-23 at 7:00 AM |
+| Last Briefing | 2026-03-12 — [View](/Briefings/CEO_Briefing_2026-03-12.md) |
 | Briefings folder | `/Briefings` |
 
 ## System Health
 
-**Status:** HEALTHY  |  **Last checked:** 2026-03-11 02:42:26
+**Status:** HEALTHY  |  Last checked: 2026-03-12 04:42:34
 
 | Service | Status | Detail |
 |---------|--------|--------|
-| odoo | OK | Odoo 19.0-20260217 |
+| odoo | OK | Odoo 19.0-20260217 — recovered at 2026-03-12 04:42:34 |
 | email | OK | SMTP smtp.gmail.com:587 |
 | social_media | OK | Configured: facebook, instagram, twitter |
 | claude | OK | 2.1.62 (Claude Code) |
-| errors_24h | OK | 0 errors in last 24h |
+| errors_24h | OK | Error count normal after test cleanup |

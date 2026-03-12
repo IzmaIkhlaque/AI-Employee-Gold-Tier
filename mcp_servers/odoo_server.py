@@ -173,7 +173,7 @@ def get_account_balances(limit: int = 30) -> str:
     """
     records = _query(
         "account.account",
-        [["deprecated", "=", False]],
+        [],  # Odoo 19 removed the 'deprecated' field; fetch all active accounts
         ["code", "name", "account_type", "current_balance"],
         limit=limit,
     )
